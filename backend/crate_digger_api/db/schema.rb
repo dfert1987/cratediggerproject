@@ -16,8 +16,9 @@ ActiveRecord::Schema.define(version: 2020_05_18_224927) do
     t.string "name"
     t.string "genre"
     t.string "image"
-    t.string "title"
     t.string "song"
+    t.string "title"
+    t.integer "discogs_id"
     t.integer "country_id", null: false
     t.integer "famous_artist_id", null: false
     t.datetime "created_at", precision: 6, null: false
