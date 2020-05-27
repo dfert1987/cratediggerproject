@@ -6,7 +6,7 @@
     padding: 6px;
     width: 300px;
     border-radius: 8px;
-    background-color: #E1E6EC;
+    background-image: url('https://i.imgur.com/kcCUplt.jpg');
     box-shadow: 5px 5px 11px #A2B1C6 , -5px -5px 11px  #fff  ;
     text-align: center;
     font-family: 'Nunito', sans-serif;
@@ -15,8 +15,14 @@
 .wrapper{
     position: relative;
 }
+
+#imagePlace img {
+    border: 2px solid black;
+
+}
 .container img{
     width: 80%;
+   
    
 }
 .container h1{
@@ -36,7 +42,7 @@
     height: 50px;
     padding: 16px;
     border-radius: 90px;
-    background-color: #E1E6EC;
+    background-color: grey;
     text-align: left;
     margin: 10px 9px;
     border: none;

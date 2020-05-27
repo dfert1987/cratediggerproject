@@ -1,5 +1,8 @@
-    
-    const play_btn = document.querySelector("#play");
+const searchParams = new URLSearchParams(window.location.search)
+const id = searchParams.get('id')
+console.log(id)
+   
+   const play_btn = document.querySelector("#play");
     const prev_btn = document.querySelector("#pre");
     const next_btn = document.querySelector("#next");
     const range = document.querySelector("#range");
@@ -12,10 +15,7 @@
     let currentTime = 0;
     let isPlaying = false;
     const currentSong = new Audio();
- 
-const searchParams = new URLSearchParams(window.location.search)
-const id = searchParams.get('id')
-console.log(id)
+
 
 fetch(`http://localhost:3000/artists/${id}`)
     .then(response => response.json())
@@ -24,6 +24,7 @@ fetch(`http://localhost:3000/artists/${id}`)
 function controller(artist) {
     makeArtistTitle(artist)
     makePlayer(artist)
+    fetchApi(artist)
 }
 
 function makeArtistTitle(artist){
@@ -82,4 +83,8 @@ function playSong(music_name){
         })
        
     })
+}
+
+function fetchApi(artist){
+    fetch(``)
 }
