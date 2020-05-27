@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  genre: MyString
+  rcountry: one
+  famous_artist: one
+
+two:
+  name: MyString
+  genre: MyString
+  rcountry: two
+  famous_artist: two
