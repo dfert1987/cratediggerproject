@@ -1,5 +1,5 @@
 Artist.destroy_all
-
+Country.destroy_all
 
 # west african countries
 nigeria = Country.create(name: 'Nigeria', region: 'Western Africa', description: "Africa's most populous nation, is also one of it's major producers of pop culture. Nigerian stars popularized genres such as afrobeat and highlife.", flag: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_Nigeria.svg/2000px-Flag_of_Nigeria.svg.png')
@@ -62,7 +62,7 @@ billy_ocean = FamousArtist.create(name: "Billy Ocean", genre: "Tropical Pop" )
 
 
 # artists db west africa
-Artist.create(name: 'Fela Kuti', genre: 'afrobeat', image: 'https://miro.medium.com/proxy/1*CRrHAHa4uj0j7JaHtES8IA.jpeg', title: "Expensive Shit", country: nigeria, famous_artist: funkadelic)
+Artist.create(name: 'Fela Kuti', genre: 'afrobeat', image: 'https://miro.medium.com/proxy/1*CRrHAHa4uj0j7JaHtES8IA.jpeg', title: "Expensive Shit", song: "https://drive.google.com/file/d/1tEK3QtjKtw1PZfbkwwBpmcjxdYxZhQHc/preview", country: nigeria, famous_artist: funkadelic)
 Artist.create(name: 'Orlando Julius', genre: 'highlife', image: 'https://www.abconcerts.be/images/events/header-large/180830feeerieen-orlando-j.jpg', title: "Disco Hi-Life", country: nigeria, famous_artist: stevie_wonder)
 Artist.create(name: 'Ebo Taylor', genre: 'afrobeat', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxu0jRCG98hRS7cn88mJhxcUbphhng25P3Q_i2YuZJjaeg9fS9&usqp=CAU', title: "You Need Love",country: ghana, famous_artist: funkadelic)
 Artist.create(name: 'Tony Allen', genre: 'afrobeat', image: 'https://i2.wp.com/liveforlivemusic.com/wp-content/uploads/2020/04/Screen-Shot-2020-04-30-at-8.29.50-PM.png?resize=740%2C390&ssl=1', title: "Never Expect Power Always", country: nigeria, famous_artist: james_brown)

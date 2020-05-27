@@ -5,6 +5,7 @@ class CreateArtists < ActiveRecord::Migration[6.0]
       t.string :genre
       t.string :image
       t.string :title
+      t.string :song
       t.references :country, null: false, foreign_key: true
       t.references :famous_artist, null: false, foreign_key: true
 
