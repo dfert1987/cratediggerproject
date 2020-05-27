@@ -38,16 +38,23 @@ function makeArtistTitle(artist){
 
 
 function makePlayer(artist) {
-    const music_name = "https://docs.google.com/uc?export=download&id=1tEK3QtjKtw1PZfbkwwBpmcjxdYxZhQHc"
+    const music_name = `${artist.song}`
+    console.log
     console.log(music_name)
 
     const pic = document.createElement('img')
     pic.src =`${artist.image}`
     
-    const listen = document.createElement('h3')
-    listen.innerText ="Listen here!"
+    const songName = document.createElement('h3')
+    songName.innerText =`${artist.title}`
 
-    picDiv.append(pic, listen)
+    const byArtist = document.createElement('h4')
+    byArtist.innerText=  `by ${artist.name}`
+    
+
+   
+
+    picDiv.append(pic, songName, byArtist)
     
     playSong(music_name)
     
@@ -86,5 +93,11 @@ function playSong(music_name){
 }
 
 function fetchApi(artist){
-    fetch(``)
+    fetch(`https://api.discogs.com/artists/${artist.discogs_id}/releases`)
+    .then(response => response.json())
+    .then(artist => showAlbums(artist))
+}
+
+function showAlbums(artist){
+console.log(artist)
 }

@@ -1,5 +1,4 @@
 Artist.destroy_all
-Country.destroy_all
 
 # west african countries
 nigeria = Country.create(name: 'Nigeria', region: 'Western Africa', description: "Africa's most populous nation, is also one of it's major producers of pop culture. Nigerian stars popularized genres such as afrobeat and highlife.", flag: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_Nigeria.svg/2000px-Flag_of_Nigeria.svg.png')

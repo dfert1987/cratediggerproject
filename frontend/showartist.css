@@ -1,3 +1,8 @@
+h1{
+    text-align: center;
+    font-family: oferta do dia;
+    font-size: 60px;
+}
 .container{
     position: absolute;
     left: 50%;
@@ -19,6 +24,16 @@
 #imagePlace img {
     border: 2px solid black;
 
+
+}
+
+#imagePlace {
+    position: relative;
+    top: 18px;
+    font-size: 20px;
+    color: teal;
+    text-shadow: black;
+    font-family: bebas neue;
 }
 .container img{
     width: 80%;
@@ -82,4 +97,8 @@
 .level::-moz-range-thumb{
     width: 50px;
     height: 50px;
+}
+
+h4 {
+    font-style: italic;
 }
