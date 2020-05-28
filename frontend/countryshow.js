@@ -2,6 +2,7 @@ const searchParams = new URLSearchParams(window.location.search)
 const id = searchParams.get('id')
 const flexBox = document.getElementById('flexbox')
 const col = document.getElementById('col')
+const titleDiv = document.getElementById('title')
 
 
 fetch(`http://localhost:3000/countries/${id}`)
@@ -28,7 +29,7 @@ function showCountry(country) {
     header.style.fontSize = '50px'
 
 
-    document.body.append(header)
+    titleDiv.append(header)
 }
 
 
