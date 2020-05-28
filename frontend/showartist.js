@@ -24,21 +24,24 @@ fetch(`http://localhost:3000/artists/${id}`)
 function controller(artist) {
     makeArtistTitle(artist)
     makePlayer(artist)
-    fetchApi(artist)
+    linkToDiscogs(artist)
 }
 
 function makeArtistTitle(artist){
+    const headerSpace = document.getElementById("header-space")
     const title = document.createElement('h1')
 
     title.innerText = `${artist.name}`
 
-    document.body.append(title)
+
+   headerSpace.append(title)
 }
 
 
 
 function makePlayer(artist) {
     const music_name = `${artist.song}`
+    
     console.log
     console.log(music_name)
 
@@ -92,12 +95,14 @@ function playSong(music_name){
     })
 }
 
-function fetchApi(artist){
-    fetch(`https://api.discogs.com/artists/${artist.discogs_id}/releases`)
-    .then(response => response.json())
-    .then(artist => showAlbums(artist))
+function linkToDiscogs(artist){
+    const buttonSpot = document.getElementById('full-discog')
+    console.log(artist.discog_id)
+    const discogButton = document.createElement('button')
+
+    discogButton.innerHTML = `<a href="https://www.discogs.com/artist/${artist.discogs_id}">See full discography!</a>`
+
+    buttonSpot.append(discogButton)
+
 }
 
-function showAlbums(artist){
-console.log(artist)
-}

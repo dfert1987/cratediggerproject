@@ -1,19 +1,17 @@
 const searchParams = new URLSearchParams(window.location.search)
 const id = searchParams.get('id')
+const flexBox = document.getElementById('flexbox')
+const col = document.getElementById('col')
 
 
 fetch(`http://localhost:3000/countries/${id}`)
     .then(response => response.json())
     .then(response => controller(response));
 
-fetchArtists()
-function fetchArtists() {
 fetch('http://localhost:3000/artists')
     .then(response => response.json())
-    .then(json => { 
-        getArtists(json)
-    })
-}
+    .then(json =>  getArtists(json))
+
 
 function controller(country){
     showCountry(country)
@@ -38,10 +36,14 @@ function getArtists(artists){
     console.log(artists)
     artists.forEach(artist => {
         if (artist.country_id == id) {
-        const showArtistCard = document.createElement('div');
+        const artistCard = document.createElement('div')
+        artistCard.className = 'card'
+        const content = document.createElement('div')
+        content.className = 'content'
         const image = document.createElement('div');
-        const showArtist = document.createElement('h3');
-        const genre = document.createElement('h4');
+        image.className = 'image'
+        const artistName = document.createElement('h2');
+        const genre = document.createElement('h3');
         const button = document.createElement('button');
         const similarArtist = artist.famous_artist_id
 
@@ -53,24 +55,23 @@ function getArtists(artists){
             response.forEach(famousArtist => {
             if (similarArtist == famousArtist.id) {
                 
-                const showSimilarArtist = document.createElement('h4');
+                const showSimilarArtist = document.createElement('h3');
                 showSimilarArtist.innerText=`Similar to: ${famousArtist.name}`
-                showArtistCard.append(showSimilarArtist, button)
+                content.append(showSimilarArtist)
             }
             })
         }
-
         image.innerHTML= `<img src="${artist.image}">`
         console.log(image)
         button.innerHTML=`<a href="showartist.html?id=${artist.id}">Artist Page</a>`
 
-
-        showArtist.innerText=`${artist.name}`
+        artistName.innerText=`${artist.name}`
         genre.innerText=`Genre: ${artist.genre}`
         
-            
-        showArtistCard.append(image, showArtist, genre)
-        document.body.append(showArtistCard)
+
+        content.append( artistName, genre, button)
+        artistCard.append(image, content)
+        col.append(artistCard)
         }
     })
 }
