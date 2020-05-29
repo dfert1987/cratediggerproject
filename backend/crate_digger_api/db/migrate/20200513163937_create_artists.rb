@@ -7,6 +7,7 @@ class CreateArtists < ActiveRecord::Migration[6.0]
       t.string :song
       t.string :title
       t.integer :discogs_id
+      t.boolean :favorited
       t.references :country, null: false, foreign_key: true
       t.references :famous_artist, null: false, foreign_key: true
 

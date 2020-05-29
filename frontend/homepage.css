@@ -1,19 +1,24 @@
 body {
     background-image: url("https://i.imgur.com/EXWWw6O.jpg");
     padding: 0;
+    position: relative;
+    height: 100%;
+
 }
 header .navbar {
     width: 100%;
     font-family: bebas neue;
     height: 100px;
+
     
 }
-header .header_logo {
+div .header_logo h3{
     width: 200px;
     height: 200px;
-    float: left;
+    right: -500px;
+  
     position: relative;
-    top: -80px;
+    /* top: 7000px; */
 }
 
 header .header_logo h3 {
@@ -28,7 +33,7 @@ nav {
     height: 100px;
     float: right;
     position: relative;
-    top: -80px;
+    top: -50px;
 }
 
 header nav li {
@@ -105,15 +110,20 @@ header nav li a:after {
 
 .logo {
     text-align: center;
+
 }
+
 
 img {
     width: 50%;
     text-align: center;
     position: relative;
-    right: 100px;
-    top: -90px
+    right: 0px;
+    top: -120px
+
 }
+
+inp
 
 .container1 {
     position: relative;
@@ -126,29 +136,53 @@ img {
     border-style: solid;
     border-color: teal;
     background: rgb(244, 238, 238);
-    top: -330px;
+    top: -377px;
     border-radius: 15px;
 }
 
+.logolittle {
+    position: relative;
+    top: -400px;
 
+}
+.isLoggedIn {
+    font-family: bebas neue ;
+    font-size: 40px;
+    position: relative;
+    top: 20px;
+    color: turquoise;
+    text-shadow: 2px 2px black;
+}
 .container1 h2 {
     font-size: 60px;
     margin: 0px;
+    font-family: bebas neue;
     padding: 0px;
+    position: absolute;
+    right: 380px;
+    text-shadow: 3px 3px white;
+    top: 800px
 }
-.container1 h3 {
+h3 {
     font-style: italic;
+    font-family: bebas neue;
     font-size: 35px;
     margin: 0px;
     padding: 0px;
     position: relative;
-    top: -10px
+    top: -0px;
+    text-shadow:3px 3px white;
+    right: -560px;
 }
 div.btn-group {
     text-align: center;
     position: relative;
     top: -560px;
-    
+}
+
+}
+div.logo {
+    right: 20px;
 }
 button.region{
 height: 80px;
@@ -191,11 +225,12 @@ form {
     border: 3px solid teal;
     box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
     padding: 2%;
+    display: inline-block;
+    flex-direction: row;
     
     background-image: url('https://i.imgur.com/kcCUplt.jpg');
-    position: relative;
-    top: -590px
 }
+
  .con {
     display: -webkit-flex;
     display: flex;
@@ -268,15 +303,19 @@ button {
     padding: 0 20px;
     background: #fff;
     border-radius: 5px;
-    
+    font-family: bebas neue;
     outline: none;
-    border: none;
+    border:2px solid  black;
   
     cursor: pointer;
     text-align: center;
     transition: all 0.2s linear;
-    font-size: 12px;
+    font-size: 20px;
     margin: 7% auto;
+    position: absolute;
+    top: 1330px;
+    right: 970px;
+    z-index: 1200;
     letter-spacing: 0.05em;
 }
 
@@ -286,14 +325,6 @@ button {
     float: left;
     margin-left: 2%;
 }
-
-.frgt-pass {background: white;
-    border: 2px solid black;
-    font-family: fjalla One;}
-
-.sign-up {background: rgb(39, 203, 186);
-    font-family: fjalla One;
-border: 2px solid black;}
 
 
 button:hover {
@@ -319,16 +350,24 @@ button:hover {
         transform: translateY(5px);
     }
 }
-button.log-in {
-    font-family: fjalla One;
-    border: 2px solid black;
-}
 
 .bottom_image {
     width: 90%;
 
     position: absolute;
-    top: 1900px;
+    top: 1200px;
     right: 70px;
 }
 
+#user-signup {
+position: absolute;
+top: 1000px;
+right: 200px;
+
+
+}
+#user-signin {
+    position: absolute;
+    top: 1000px;
+    right: 800px;
+}

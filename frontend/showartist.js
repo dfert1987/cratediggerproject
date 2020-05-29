@@ -101,6 +101,8 @@ function linkToDiscogs(artist){
     const discogButton = document.createElement('button')
 
     discogButton.innerHTML = `<a href="https://www.discogs.com/artist/${artist.discogs_id}">See full discography!</a>`
+    // discogButton.style.fontSize = "20px"
+    // discogButton.style.fontDecoration = "none"
 
     buttonSpot.append(discogButton)
 

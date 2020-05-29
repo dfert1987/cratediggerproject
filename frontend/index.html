@@ -10,15 +10,14 @@
 <body>
     <header class="navbar">
         <div class="header_logo">
-            <h3>GCD</h3>
+            <h3 class="logolittle">GCD</h3>
         </div>
         <nav>
         <ul>
             <li><a href="regions.html">Regions</a></li>
             <li><a href="#">Countries</a></li>
             <li><a href="#">Artist Equivilants</a></li>
-            <li><a href="#">Mixes</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="favorites">Favorites</a></li>
         </ul>
     </nav>
     </header>
@@ -27,35 +26,51 @@
     </div>
     <div class="container1">
     <h2>Welcome to Global Crate Digger!</h2>
-    <h3>Your Passport to New Music!</h3>
-    </div>
-    <div class="btn-group">
-        <button class="region">Music by Region</button>
-        <button class="country">Music By Country</button>
-        <button class="artist">Music By Similar Artist</button>
+    <!-- <h3button class="artist">Music By Similar Artist</button> -->
       </div>
-    <div class="overlay">
-        <form>
+        <form id="user-signup">
            <div class="con">
            <header class="head-form">
-              <h2>Log In</h2>
-              <p>Login Below to Enter and Start Exploring!</p>
+              <h2>Sign Up</h2>
+              <p>Sign Up Below to Create an Account!</p>
            </header>
            <br>
            <div class="field-set">
-                 <input class="form-input" id="txt-input" type="text" placeholder="UserName" required>
+                 <input class="form-input" id="txt-inputsu" type="text" placeholder="UserName" name="username">
               <br>
-              <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+              <input class="form-input" type="password" placeholder="Password" id="pwdsu"  name="password" required>
               <br>
-              <button class="log-in"> Log In </button>
+              <input type="submit" value="Sign Up" />
            </div>
            <div class="other">
-              <button class="btn submits frgt-pass">Forgot Password</button>
-              <button class="btn submits sign-up">Sign Up </button>
            </div>
           </div>
         </form>
+        </div><h3>Your Passport to New Music!</h3>
+    </div>
+    <form id="user-signin">
+        <div class="con">
+        <header class="head-form">
+           <h2>Sign In</h2>
+           <p>Sign Below to Enter and Start Exploring!</p>
+        </header>
+        <br>
+        <div class="field-set">
+              <input class="form-input" id="txt-inputsi" type="text" placeholder="UserName" name="username">
+           <br>
+           <input class="form-input" type="password" placeholder="Password" id="pwdsi"  name="password" required>
+           <br>
+           <input  type="submit" value="Sign In" />
+           <p class="isLoggedIn">Not Logged In</p>
         </div>
+        <div class="other">
+        </div>
+       </div>
+     </form>
+     <button id="logout">Logout</button>
+    </div>
+ </div>
+    <div class="btn-group">
    <img class="bottom_image" src="https://i.imgur.com/cM1kz2U.png">
     </div>
         

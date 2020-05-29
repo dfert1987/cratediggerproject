@@ -9,10 +9,22 @@ body
     align-items: center;
     background-image: url("https://i.imgur.com/EXWWw6O.jpg");
 }
+
+#banner {
+position: relative;
+right: -400px;
+display: flex;
+height: 60%;
+}
+#banner img {
+    height: 60%;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+
+}
 #flexbox
 {
     width: 1200px;
-    height: 100%
+    height: 100%;
     display: flex;
     margin-left: auto;
     margin-right: auto;    
@@ -25,7 +37,7 @@ body
      display: inline-block;
     overflow: hidden;
     position: relative;
-    top: 300px;
+    top: -100px;
     align-content: center;
     right: -130px;
 }
@@ -46,7 +58,7 @@ body
 }
 
 .card .image {
-    position: absolute;;
+position: absolute;;
 height: 100%;
 top: 0;
 left: 0;
@@ -75,16 +87,26 @@ width: 100%
     left: 10%;
     width: 80%;
     height: 60px;
-    background: #fff;
+    background-image: url('https://as1.ftcdn.net/jpg/02/35/48/60/500_F_235486013_qmwdFUauRZkhMVSelEx8MXUyxWfaHtmx.jpg');
     transition: 0.5s;
     border: solid 2px black;
     overflow: hidden;
-
-
     padding: 15px;
     box-sizing: border-box;
 }
 
+a:link {
+    text-decoration: none;
+    color: teal;
+}
+
+a:hover {
+    color: turquoise;
+}
+
+a:visited {
+    color: grey
+}
 
 .card:hover .content
 {
@@ -97,7 +119,7 @@ width: 100%
 {
     margin: -10px;
     padding: 5px;
-    font-size: 20px;
+    font-size: 30px;
     font-family: bebas neue;
     text-align: left;
     justify-content: center;
@@ -109,7 +131,6 @@ width: 100%
     padding: 2px;
     position: relative;
     top: -28px;
-
 }
 
 h1 {
@@ -123,16 +144,18 @@ h1 {
     position: relative;
     right: -500px;
     text-shadow: 2px 2px white;
-    
     }
-    button
+
+button
 {
 position: relative;
+height: 50px;
+border-radius: 8px;
 text-align: center;
 font-family: bebas neue;
 height: 30px;
 width: 130px;
-right: -50px;
-top: 30px;
+right: 40px;
+top: 100px;
 font-size: 15px;
 }

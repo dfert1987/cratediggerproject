@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_05_18_224927) do
     t.string "song"
     t.string "title"
     t.integer "discogs_id"
+    t.boolean "favorited"
     t.integer "country_id", null: false
     t.integer "famous_artist_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -32,6 +33,7 @@ ActiveRecord::Schema.define(version: 2020_05_18_224927) do
     t.string "region"
     t.text "description"
     t.string "flag"
+    t.string "banner"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -3,6 +3,7 @@ const id = searchParams.get('id')
 const flexBox = document.getElementById('flexbox')
 const col = document.getElementById('col')
 const titleDiv = document.getElementById('title')
+const bannerDiv = document.getElementById('banner')
 
 
 fetch(`http://localhost:3000/countries/${id}`)
@@ -16,7 +17,9 @@ fetch('http://localhost:3000/artists')
 
 function controller(country){
     showCountry(country)
+    countryBanner(country)
 }
+
 
 function showCountry(country) {
     const header = document.createElement('h1')
@@ -30,6 +33,15 @@ function showCountry(country) {
 
 
     titleDiv.append(header)
+}
+
+function countryBanner(country){
+    const banner = document.createElement('div')
+
+    banner.innerHTML = `<img src="${country.banner}">`
+    console.log(country.banner)
+
+    bannerDiv.append(banner)
 }
 
 

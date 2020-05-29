@@ -5,6 +5,7 @@ class CreateCountries < ActiveRecord::Migration[6.0]
       t.string :region
       t.text :description
       t.string :flag
+      t.string :banner
 
       t.timestamps
     end

@@ -1,7 +1,8 @@
 class ArtistsController < ApplicationController
+    
     def index
-            @artists = Artist.all
-            render json: @artists, include: [:country]
+        @artists = Artist.all
+        render json: @artists, include: [:country]
     end
 
     def show
@@ -10,23 +11,34 @@ class ArtistsController < ApplicationController
     end
 
     def create 
-        token = request.headers[ Authorization ]
-
-        if !token
-            render status: :unauthorized
-
-        else
-            @artist = Artist.new(artist_params)
-        
+        @artist = Artist.new(artist_params)
         render json: @artist
-    end
-end
+     end
+
+#     def update 
+#         # header = request.headers["Authorization"]
+
+#         # if !header
+#         #     render json: {error: "Not authorized."}, status: :unauthorized
+#         # else
+#         #     token = header.split('')[1]
+#         #     secret = Rails.application.secrets.secret_key_base
+#         # begin
+#         #     payload = JWT.decode(token, secret).first
+#             @artist.update(artist_params)
+#         rescue
+#             render json: { error: 'Must be logged in.'}, status: :unauthorized
+#      end
+# end
 
     private 
 
-    def artist_params
-        params.require(:artist).permit([:name, :genre, :image, :country_id, :famous_artist_id])
+    def find_artist
+        @artist = Artist.find(params[:id])
     end
 
+    def artist_params
+        params.require(:artist).permit([:name, :genre, :image, :song, :title, :discogs_id, :favorited, :country_id, :famous_artist_id])
+    end
 
-end
+    end
