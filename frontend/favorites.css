@@ -1,0 +1,10 @@
+body {
+    background-image: url("https://i.imgur.com/EXWWw6O.jpg");
+}
+
+h1 {
+    font-family: oferta do dia;
+    font-size: 50px;
+    text-align: center;
+    text-shadow:2px 2px white;
+}
