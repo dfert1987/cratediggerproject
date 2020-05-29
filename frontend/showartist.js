@@ -1,5 +1,6 @@
 const searchParams = new URLSearchParams(window.location.search)
 const id = searchParams.get('id')
+const url = `http://localhost:3000/artists/${id}/`
 console.log(id)
    
    const play_btn = document.querySelector("#play");
@@ -26,6 +27,7 @@ function controller(artist) {
     makeArtistTitle(artist)
     makePlayer(artist)
     linkToDiscogs(artist)
+    favoriteChange(artist)
 }
 
 function makeArtistTitle(artist){
@@ -108,14 +110,15 @@ function linkToDiscogs(artist){
     buttonSpot.append(discogButton)
 
 }
-
+function favoriteChange(artist) {
 favoriteButton.addEventListener('click', event => {
     event.preventDefault()
 
     changeFavoriteButton()
     addFavorited()
-
-}) 
+    favoriteBackend(artist)
+})
+}
 
 function changeFavoriteButton(){
     document.getElementById('like-button').style.color = 'grey'
@@ -129,8 +132,21 @@ function addFavorited() {
     favorited.innerText= 'Saved to Favorites!'
 
     favoritedDiv.append(favorited)
+ 
+}
 
+function favoriteBackend(artist) {
+    if (artist.favorited == false) {
+        artist.favorited = true 
+    } else artist.favorited = true
     
+    fetch(url, {
+       method: "PUT",
+       headers: {
+           "Content-Type": "application/json"
+       },
+       body: JSON.stringify({artist})
+    })
 }
 
 // function addFavorited() {

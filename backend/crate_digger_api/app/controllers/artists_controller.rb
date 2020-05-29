@@ -1,5 +1,5 @@
 class ArtistsController < ApplicationController
-    
+    before_action :find_artist, only:[:update]
     def index
         @artists = Artist.all
         render json: @artists, include: [:country]
@@ -15,7 +15,11 @@ class ArtistsController < ApplicationController
         render json: @artist
      end
 
-#     def update 
+def update 
+    @artist.update(artist_params)
+    render json: @artist
+
+end
 #         # header = request.headers["Authorization"]
 
 #         # if !header
@@ -38,7 +42,7 @@ class ArtistsController < ApplicationController
     end
 
     def artist_params
-        params.require(:artist).permit([:name, :genre, :image, :song, :title, :discogs_id, :favorited, :country_id, :famous_artist_id])
+        params.require(:artist).permit(:name, :genre, :image, :song, :title, :discogs_id, :favorited, :country_id, :famous_artist_id)
     end
 
     end
