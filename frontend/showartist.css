@@ -157,9 +157,13 @@ div #full-discog button {
     position: relative;
     top: -16px;
     right: -550px;
-
-    
+    color: teal;
 }
+
+#like-button:hover {
+    color: turquoise
+}
+
 
 nav a:link {
     font-family: bebas neue;
@@ -320,4 +324,15 @@ header nav li a:after {
     transition: 0.5s ease;
 
     background-color: turquoise;
+}
+
+#Favorited h3{
+    font-family: bebas neue;
+    font-size: 48px;
+    text-shadow: 2px 2px white;
+    position: absolute;
+    top: 450px;
+    right: 1020px;
+    z-index: 100000;
+    /* display: inline-block; */
 }

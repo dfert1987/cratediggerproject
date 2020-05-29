@@ -7,6 +7,7 @@ console.log(id)
     const next_btn = document.querySelector("#next");
     const range = document.querySelector("#range");
     const play_img = document.querySelector("#play_img")
+    const favoriteButton = document.querySelector("#like-button")
    
     const picDiv = document.getElementById("imagePlace")
 
@@ -107,4 +108,34 @@ function linkToDiscogs(artist){
     buttonSpot.append(discogButton)
 
 }
+
+favoriteButton.addEventListener('click', event => {
+    event.preventDefault()
+
+    changeFavoriteButton()
+    addFavorited()
+
+}) 
+
+function changeFavoriteButton(){
+    document.getElementById('like-button').style.color = 'grey'
+    document.getElementById('like-button').innerHTML = "Favorited"
+}
+
+function addFavorited() {
+    const favorited = document.createElement('h3')
+    const favoritedDiv = document.getElementById('Favorited')
+
+    favorited.innerText= 'Saved to Favorites!'
+
+    favoritedDiv.append(favorited)
+
+    
+}
+
+// function addFavorited() {
+//     const document.createElement
+// }
+
+
 
