@@ -107,6 +107,13 @@ header nav li a:after {
     background-color: turquoise;
 }
 
+#submit {
+    width: 100px;
+    height: 30px;
+    font-family: bebas neue;
+    font-size: 20px;
+    background-color: turquoise;
+}
 
 .logo {
     text-align: center;
@@ -149,7 +156,7 @@ inp
     font-family: bebas neue ;
     font-size: 40px;
     position: relative;
-    top: 20px;
+    top: 14px;
     color: turquoise;
     text-shadow: 2px 2px black;
 }
@@ -254,7 +261,7 @@ header h2 {
     font-family: 'Bebas Neue';
     position: relative;
     top: 20px;
-    color: #ffffff;
+    color: turquoise;
 }
 header p {letter-spacing: 0.05em;
     font-family: 'Bebas Neue';
