@@ -52,7 +52,7 @@ Users can log in or sign up in the labeled boxes.
 * Hover over an artist card to see the artist's genre and a similar more familiar artist
 * Click an artist card to enter the artist page
 
-<img src="player cd.png">
+<img src="country cd.png">
 
 ### Artist Page 
 
@@ -61,7 +61,7 @@ Users can log in or sign up in the labeled boxes.
 * Save the artist as a favorite
 * View favorites to keep track of all your favorite artists
 
-<img src "player cd.png>
+<img src="player cd.png">
 
 
 
