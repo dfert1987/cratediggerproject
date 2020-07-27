@@ -8,3 +8,50 @@ h1 {
     text-align: center;
     text-shadow:2px 2px white;
 }
+
+img {
+    width: auto;
+    height: 250px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+
+}
+a:link {
+    color: black;
+    font-family: bebas neue;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+a:hover {
+    color:turquoise;
+}
+
+body {
+    text-align: center;
+}
+
+#flexbox
+{
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+     display: inline-block;
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+}
+.container {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 1% 20px;
+}

@@ -15,9 +15,11 @@ position: relative;
 right: -400px;
 display: flex;
 height: 60%;
+
 }
 #banner img {
     height: 60%;
+    border:solid 4px black;
     box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
 
 }

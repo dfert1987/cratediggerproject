@@ -7,4 +7,11 @@ def create
     )
         render json: {user: @user}, status: :created
     end
+
+def index
+    @users = User.all
+    render json: @users
+
+    
+end
 end
