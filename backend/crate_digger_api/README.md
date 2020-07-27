@@ -1,6 +1,6 @@
 # Crate Digger
 
-https://i.imgur.com/PNoWSVG.png
+<img src="https://i.imgur.com/PNoWSVG.png">
 
 
 
