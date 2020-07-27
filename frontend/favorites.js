@@ -2,6 +2,15 @@ fetch(`http://localhost:3000/artists/`)
     .then(response => response.json())
     .then(artists => parse(artists))
 
+
+getUsers()
+
+function getUsers() {
+fetch(`http://localhost:3000/users/`)
+    .then(response => response.json())
+    .then (users => welcomeMessage(users))
+}
+
 function parse(artists) {
     artists.forEach(artist => {
         if (artist.favorited == true) {
@@ -9,6 +18,22 @@ function parse(artists) {
         }
 })
 }
+
+// function welcomeMessage(users){
+//     users.forEach(user => {
+//         if (user.username) {
+//             // console.log(`Welcome ${user.username}`)
+//         }
+//         const header = document.createElement('h1')
+//         const headerDiv = document.getElementById('header')
+        
+//         header.innerText = `Here are your favorites, ${user.username}`
+
+//         headerDiv.append(header)
+
+//         })
+//     }
+
 
 function createArtistCard(artist) {
     const artistDiv = document.createElement('div')
