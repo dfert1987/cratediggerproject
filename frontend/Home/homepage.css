@@ -27,6 +27,11 @@
   display: flex;
   flex-direction: row;
 }
+
+a {
+  text-decoration: none;
+}
+
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -35,10 +40,12 @@
 }
 
 .nav-logo {
+  cursor: pointer;
   letter-spacing: 3px;
   font-size: 60px;
   font-family: oferta do dia;
   margin-left: 1em;
+  color: black;
   text-shadow: 2px 2px white;
 }
 
@@ -46,7 +53,11 @@
   list-style: none;
 }
 
-a {
+.logolink {
+  color: black;
+}
+
+.navlink {
   text-decoration: none;
   color: white;
   font-family: bebas neue;
@@ -61,6 +72,7 @@ a {
 .nav-item a:hover {
   color: rgb(8, 146, 132);
 }
+
 .nav-item a:before {
   content: '';
   position: absolute;
