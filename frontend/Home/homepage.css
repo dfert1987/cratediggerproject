@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-image: url('./Images/cratebg.jpeg');
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  font-family: bebas neue;
+  justify-content: space-between;
+  height: 4em;
+  margin-top: 2em;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-right: 1em;
+}
+
+.nav-logo {
+  letter-spacing: 3px;
+  font-size: 60px;
+  font-family: oferta do dia;
+  margin-left: 1em;
+  text-shadow: 2px 2px white;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: bebas neue;
+  font-size: 35px;
+  text-transform: uppercase;
+  padding: 20px;
+  margin-left: 5px;
+  text-shadow: 2px 2px black;
+  transition: 0.5s ease;
+}
+
+.nav-item a:hover {
+  color: rgb(8, 146, 132);
+}
+.nav-item a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  transition: 0.5s ease;
+  background-color: white;
+}
+
+.nav-item a:hover:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  opacity: 1;
+  height: 5px;
+  transition: 0.5s ease;
+  background-color: white;
+}
+
+.nav-item a:hover:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 5px;
+  transition: 0.5s ease;
+  opacity: 1;
+  background-color: white;
+}
+
+.nav-item a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: turquoise;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.logo-top {
+  font-family: oferta do dia;
+  font-size: 60px;
+  position: relative;
+  margin: 0;
+  text-shadow: white 2px 2px;
+}
+
+.logo-bottom {
+  font-family: oferta do dia;
+  font-size: 40px;
+  position: relative;
+  bottom: 1em;
+  text-shadow: white 2px 2px;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 2em;
+  width: 40%;
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3em;
+  justify-content: center;
+}
+
+.form-container-1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3em;
+}
+
+.form-container-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-sign-up {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.sign-in-up {
+  text-shadow: 2px 2px black;
+  font-family: 'Bebas Neue';
+  font-size: 40px;
+  color: turquoise;
+}
+
+.sign-in-up-directions {
+  letter-spacing: 0.05em;
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+  color: turquoise;
+  text-shadow: 2px 2px black;
+}
+
+div.logo {
+  right: 20px;
+}
+
+button.region {
+  height: 80px;
+  font-family: fjalla one;
+  background-color: rgb(244, 238, 238);
+  font-size: 15px;
+  border: 2px solid black;
+}
+
+form {
+  width: 450px;
+  min-height: 500px;
+  height: auto;
+  border-radius: 5px;
+  margin: auto;
+  border: 3px solid teal;
+  box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+  padding: 2%;
+  flex-direction: row;
+  background-image: url('https://i.imgur.com/kcCUplt.jpg');
+}
+
+.head-form {
+  margin-top: 5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.head-form2 {
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.form-input {
+  width: 240px;
+  height: 50px;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-bottom: 1em;
+  margin-right: auto;
+  padding: 15px;
+  font-size: 16px;
+  font-family: bebas neue;
+  color: #5e6472;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 0px 5px 5px 0px;
+  transition: 0.2s linear;
+}
+
+input.form-input {
+  width: 250px;
+}
+
+input[id='txt-input'] {
+  width: 250px;
+}
+
+input:focus {
+  transform: translateX(-2px);
+  border-radius: 5px;
+}
+
+.submit {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  font-family: bebas neue;
+  font-size: 20px;
+  background-color: turquoise;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.logout {
+  margin-left: 0.5em;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  font-family: bebas neue;
+  font-size: 20px;
+  background-color: turquoise;
+}
+
+button:hover {
+  transform: translatey(3px);
+  border: 4px, solid, black;
+  box-shadow: none;
+}
+
+.field-set {
+  margin-left: 5em;
+  margin-right: auto;
+}
+
+button:hover {
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+.bottom_image {
+  width: 90%;
+  position: absolute;
+  top: 1200px;
+  right: 70px;
+}
