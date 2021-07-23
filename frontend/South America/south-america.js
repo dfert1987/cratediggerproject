@@ -1,5 +1,6 @@
 const colombia = document.querySelector('#polyline12')
 const brazil = document.querySelector('#polyline10')
+const elem = document.querySelector('.country-info');
 const brazilId = '10'
 const colombiaId = '11'
 
@@ -31,15 +32,14 @@ function showCountry(country) {
     countryDescription.innerText =`${country.description}`
     flagImg.src = `${country.flag}`
     
-    flagImg.style.width ='20%'
+    flagImg.style.width ='30%'
     countryDescription.style.fontFamily = 'bebas neue'
-    countryDescription.style.fontSize = '27px'
-    countryDescription.style.width = '25%'
+    countryDescription.style.fontSize = '30px'
     countryDescription.style.textAlign = 'center'
     countryDescription.style.textShadow = '2px 2px white'
 
     
-    document.body.append(countryCard)
+    elem.append(countryCard)
     countryCard.append(countryName, flagImg, countryDescription)
     
 
