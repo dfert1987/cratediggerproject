@@ -36,13 +36,14 @@ body {
   stroke-width: 2px;
 }
 
-
-
-.map {
-  height: 600px;
-  margin-left: 4em;
+.mapdiv {
+  width: 600px;
 }
 
+svg {
+  height: 600px;
+  width: 700px;
+}
 
 .country {
   fill: teal;

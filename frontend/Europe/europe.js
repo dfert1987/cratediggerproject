@@ -2,6 +2,7 @@ const turkey = document.querySelector('.country #TR')
 const france = document.querySelector('.country #FR')
 const estonia = document.querySelector('.country #EE')
 const italy = document.querySelector('.country #IT')
+const elem = document.querySelector('.country-info');
 const franceId = '20'
 const italyId = '21'
 const turkeyId = '22'
@@ -42,15 +43,14 @@ function showCountry(country) {
     countryDescription.innerText =`${country.description}`
     flagImg.src = `${country.flag}`
     
-    flagImg.style.width ='20%'
+    flagImg.style.width ='30%'
     countryDescription.style.fontFamily = 'bebas neue'
-    countryDescription.style.fontSize = '27px'
-    countryDescription.style.width = '25%'
+    countryDescription.style.fontSize = '30px'
     countryDescription.style.textAlign = 'center'
     countryDescription.style.textShadow = '2px 2px white'
 
     
-    document.body.append(countryCard)
+    elem.append(countryCard)
     countryCard.append(countryName, flagImg, countryDescription)
     
 
