@@ -1,77 +1,94 @@
-body{
-    background-image: url("https://i.imgur.com/EXWWw6O.jpg");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-h1{
-    font-family: oferta do dia;
-    text-shadow: 2px 2px white;
-    font-size: 90px;
-    text-align: center;
-    position: relative;
-    left: -50px
+body {
+  background-image: url('https://i.imgur.com/EXWWw6O.jpg');
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 100vh;
 }
-h4{
-    font-family: bebas neue;
-    position: relative;
-    text-align: center;
-    top: -60px;
-    right: 50px;
-    font-size: 25px;
-    text-shadow: 2px 2px white;
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
 }
-.mapdiv{
-    width:10%;
-    margin: auto;
+
+.title {
+  font-family: oferta do dia;
+  text-shadow: 2px 2px white;
+  font-size: 90px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: bebas neue;
+  text-align: center;
+  font-size: 25px;
+  text-shadow: 2px 2px white;
 }
 
 .mapdiv path {
-        stroke-width:2px;
+  stroke-width: 2px;
 }
 
 svg {
-    height: 600px;
-    position: relative;
-    left:100px;
+  height: 600px;
 }
+
 .country {
-    fill: teal;
-    box-shadow: inset 0 0 0 0 #53a7ea;
-    transition:  fill 0.5s;
-    
+  fill: teal;
+  box-shadow: inset 0 0 0 0 #53a7ea;
+  transition: fill 0.5s;
 }
+
 .country:hover {
-    transition:  fill 0.5s; 
-    box-shadow: inset 0 0 90 25px #53a7ea;
-    fill: rgb(1, 211, 155);
-    stroke-dashoffset: 0;
-    border-radius:50%;
-    }
-    
+  transition: fill 0.5s;
+  box-shadow: inset 0 0 90 25px #53a7ea;
+  fill: rgb(1, 211, 155);
+  stroke-dashoffset: 0;
+  border-radius: 50%;
+}
+
 h2 {
-        font-family: bebas neue;
-        font-size: 80px ;
-        text-shadow: 2px 2px white;
-        text-align: center;
-        position: relative;
-        top: -700px;
-        right: 290px;
-        
-    }
-    
-    .description {
-    position: relative;
-    top: -750px;
-    right: -250px; 
-    }
-    
-    .flag {
-    position: relative;
-    top: -750px;
-    right: -280px;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
-    
-    }
-    .country-card {
-        position: flex;
-        z-index: 400;
-    }
+  font-family: bebas neue;
+  font-size: 80px;
+  text-shadow: 2px 2px white;
+  text-align: center;
+}
+
+.description {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: left;
+}
+
+.flag {
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+}
+
+.country-card {
+  flex-direction: column;
+  margin-top: 2em;
+  text-align: left;
+  display: flex;
+}
+
+.map-flag {
+  display: flex;
+  flex-direction: row;
+}
+
+.country-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}

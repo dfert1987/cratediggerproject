@@ -2,6 +2,7 @@ const drc = document.querySelector('.country #CD')
 const kenya = document.querySelector('.country #KE')
 const southAfrica = document.querySelector('.country #ZA')
 const country = document.querySelector('.country')
+const elem = document.querySelector('.country-info');
 const drcId = '9'
 const kenyaId = '8'
 const southAfricaId = '7'
@@ -15,8 +16,6 @@ drc.addEventListener('mouseover', function(event){
 kenya.addEventListener('mouseover', function(event){
     fetchCountry(kenyaId)
 })
-
-
 
 function fetchCountry(id) {
 fetch(`http://localhost:3000/countries/${id}`)
@@ -41,12 +40,11 @@ function showCountry(country) {
     flagImg.style.width ='30%'
     countryDescription.style.fontFamily = 'bebas neue'
     countryDescription.style.fontSize = '30px'
-    countryDescription.style.width = '25%'
     countryDescription.style.textAlign = 'center'
     countryDescription.style.textShadow = '2px 2px white'
 
     
-    document.body.append(countryCard)
+    elem.append(countryCard)
     countryCard.append(countryName, flagImg, countryDescription)
     
 
