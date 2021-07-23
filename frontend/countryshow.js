@@ -76,7 +76,7 @@ function getArtists(artists){
         }
         image.innerHTML= `<img src="${artist.image}">`
         console.log(image)
-        button.innerHTML=`<a href="showartist.html?id=${artist.id}">Artist Page</a>`
+        button.innerHTML=`<a href="../showartist.html?id=${artist.id}">Artist Page</a>`
 
         artistName.innerText=`${artist.name}`
         genre.innerText=`Genre: ${artist.genre}`
