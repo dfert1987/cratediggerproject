@@ -53,6 +53,10 @@ body {
   list-style: none;
 }
 
+.WAfrica {
+  cursor: pointer;
+}
+
 .navlink {
   text-decoration: none;
   color: white;
