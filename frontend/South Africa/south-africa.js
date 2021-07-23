@@ -38,7 +38,7 @@ function showCountry(country) {
     countryDescription.innerText =`${country.description}`
     flagImg.src = `${country.flag}`
     
-    flagImg.style.width ='20%'
+    flagImg.style.width ='30%'
     countryDescription.style.fontFamily = 'bebas neue'
     countryDescription.style.fontSize = '30px'
     countryDescription.style.width = '25%'
