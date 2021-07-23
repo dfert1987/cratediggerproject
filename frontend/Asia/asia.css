@@ -5,11 +5,11 @@
 }
 
 body {
+  background-image: url('https://i.imgur.com/EXWWw6O.jpg');
   display: flex;
   flex-direction: column;
   padding: 0;
   height: 100vh;
-  background-image: url('https://i.imgur.com/EXWWw6O.jpg');
 }
 
 .title-container {
@@ -21,13 +21,13 @@ body {
 .title {
   text-align: center;
   font-family: oferta do dia;
+  font-size: 70px;
   text-shadow: 2px 2px white;
-  font-size: 90px;
 }
 
 .subtitle {
-  font-family: bebas neue;
   text-align: center;
+  font-family: bebas neue;
   font-size: 25px;
   text-shadow: 2px 2px white;
 }
@@ -36,13 +36,13 @@ body {
   stroke-width: 2px;
 }
 
-#background {
-  border: 2px solid black;
+.mapdiv {
+  width: 600px;
 }
 
 svg {
-  width: 600px;
-  margin-left: 4em;
+  width: 1000px;
+  height: 800px;
 }
 
 .country {
@@ -90,6 +90,7 @@ h2 {
 .map-flag {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .country-info {
