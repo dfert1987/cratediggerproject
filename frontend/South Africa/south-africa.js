@@ -1,7 +1,7 @@
-const drc = document.querySelector('.country #CD')
-const kenya = document.querySelector('.country #KE')
-const southAfrica = document.querySelector('.country #ZA')
-const country = document.querySelector('.country')
+const drc = document.querySelector('.country #CD');
+const kenya = document.querySelector('.country #KE');
+const southAfrica = document.querySelector('.country #ZA');
+const country = document.querySelector('.country');
 const elem = document.querySelector('.country-info');
 const drcId = '9'
 const kenyaId = '8'

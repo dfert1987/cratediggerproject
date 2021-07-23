@@ -1,7 +1,8 @@
-const cuba = document.querySelector('#cu')
-const haiti = document.querySelector('#ht')
-const jamaica = document.querySelector('#jm')
-const trinidad = document.querySelector('#tt')
+const cuba = document.querySelector('#cu');
+const haiti = document.querySelector('#ht');
+const jamaica = document.querySelector('#jm');
+const trinidad = document.querySelector('#tt');
+const elem = document.querySelector('.country-info');
 const cubaId = '15'
 const haitiId = '13'
 const jamaicaId = '14'
@@ -44,15 +45,14 @@ function showCountry(country) {
     countryDescription.innerText =`${country.description}`
     flagImg.src = `${country.flag}`
     
-    flagImg.style.width ='20%'
+    flagImg.style.width ='30%'
     countryDescription.style.fontFamily = 'bebas neue'
     countryDescription.style.fontSize = '30px'
-    countryDescription.style.width = '25%'
     countryDescription.style.textAlign = 'center'
     countryDescription.style.textShadow = '2px 2px white'
 
     
-    document.body.append(countryCard)
+    elem.append(countryCard)
     countryCard.append(countryName, flagImg, countryDescription)
     
 

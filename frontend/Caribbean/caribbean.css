@@ -1,65 +1,98 @@
-body {
-    background-image: url("https://i.imgur.com/EXWWw6O.jpg");
-}
-h1{
-    text-align: center;
-    font-family: oferta do dia;
-    text-shadow: 2px 2px white;
-    font-size: 70px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-#background
-{
-    border: 2px solid black;
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 100vh;
+  background-image: url('https://i.imgur.com/EXWWw6O.jpg');
 }
-h3 {
-    font-family: bebas neue;
-    font-size: 30px;
-    text-shadow: 2px 2px white;
-    text-align: center;
-    position: relative;
-    top: -30px;
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
 }
-svg{
- position: absolute;
- right: 30px;   
- width: 40%;
- top: 140px;
- 
+
+.title {
+  text-align: center;
+  font-family: oferta do dia;
+  text-shadow: 2px 2px white;
+  font-size: 90px;
 }
+
+.subtitle {
+  font-family: bebas neue;
+  text-align: center;
+  font-size: 25px;
+  text-shadow: 2px 2px white;
+}
+
+.mapdiv path {
+  stroke-width: 2px;
+}
+
+#background {
+  border: 2px solid black;
+}
+
+svg {
+  width: 600px;
+  margin-left: 4em;
+}
+
 .country {
-    fill: teal;
-    box-shadow: inset 0 0 0 0 #53a7ea;
-    transition:  fill 0.5s;
+  fill: teal;
+  box-shadow: inset 0 0 0 0 #53a7ea;
+  transition: fill 0.5s;
 }
 .country:hover {
-    transition:  fill 0.5s; 
-    box-shadow: inset 0 0 90 25px #53a7ea;
-    fill: rgb(1, 211, 155);
-    stroke-dashoffset: 0;
-    border-radius:50%;
-    }
+  transition: fill 0.5s;
+  box-shadow: inset 0 0 90 25px #53a7ea;
+  fill: rgb(1, 211, 155);
+  stroke-dashoffset: 0;
+  border-radius: 50%;
+}
 
-    h2 {
-        font-family: bebas neue;
-        font-size: 80px ;
-        text-shadow: 2px 2px white;
-        text-align: center;
-        position: relative;
-        top: -80px;
-        right: 290px;
-        
-    }
-    
-    .description {
-    position: relative;
-    top: -150px;
-    right: -250px; 
-    }
-    
-    .flag {
-    position: relative;
-    top: -150px;
-    right: -280px;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
-    }
+h2 {
+  font-family: bebas neue;
+  font-size: 80px;
+  text-shadow: 2px 2px white;
+  text-align: center;
+}
+
+.description {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: left;
+}
+
+.flag {
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+}
+
+.country-card {
+  flex-direction: column;
+  margin-top: 2em;
+  text-align: left;
+  display: flex;
+}
+
+.map-flag {
+  display: flex;
+  flex-direction: row;
+}
+
+.country-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
