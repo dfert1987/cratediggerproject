@@ -1,163 +1,140 @@
-body
-{
-    margin: 10px;
-    padding: 0;
-    display: flexbox;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    align-items: center;
-    background-image: url("https://i.imgur.com/EXWWw6O.jpg");
+body {
+  margin: 10px;
+  padding: 0;
+  display: flexbox;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  align-items: center;
+  text-align: center;
+  background-image: url('https://i.imgur.com/EXWWw6O.jpg');
 }
 
-#banner {
-position: relative;
-right: -400px;
-display: flex;
-height: 60%;
-
+.title-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
+
 #banner img {
-    height: 60%;
-    border:solid 4px black;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+  height: 350px;
+  border: solid 4px black;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2em;
+}
 
+#flexbox {
+  height: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  align-content: center;
+  text-align: center;
 }
-#flexbox
-{
-    width: 1200px;
-    height: 100%;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;    
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-     display: inline-block;
-    overflow: hidden;
-    position: relative;
-    top: -100px;
-    align-content: center;
-    right: -130px;
-}
-#col {
-    position: center;
-}
+
+
 
 .card {
-    position: relative;
-    text-align: center;
-    padding: 10px;
-    width: 250px;
-    display: inline-block;
-    margin: 0 1% 20px;
-    height: 350px;
-    background: #000;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  width: 250px;
+  display: inline-block;
+  margin: 1em;
+  height: 350px;
+  background: #000;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
 }
 
 .card .image {
-position: absolute;;
-height: 100%;
-top: 0;
-left: 0;
-width: 100%
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-.card .image img
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.5s;
+.card .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
 }
 
-.card:hover .image img
-{
-    opacity: 0;
+.card:hover .image img {
+  opacity: 0;
 }
-.card .content
-{
-    position: absolute;
-    bottom: 20px;
-    left: 10%;
-    width: 80%;
-    height: 60px;
-    background-image: url('https://as1.ftcdn.net/jpg/02/35/48/60/500_F_235486013_qmwdFUauRZkhMVSelEx8MXUyxWfaHtmx.jpg');
-    transition: 0.5s;
-    border: solid 2px black;
-    overflow: hidden;
-    padding: 15px;
-    box-sizing: border-box;
+.card .content {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+  height: 60px;
+  background-image: url('https://as1.ftcdn.net/jpg/02/35/48/60/500_F_235486013_qmwdFUauRZkhMVSelEx8MXUyxWfaHtmx.jpg');
+  transition: 0.5s;
+  border: solid 2px black;
+  overflow: hidden;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 a:link {
-    text-decoration: none;
-    color: teal;
+  text-decoration: none;
+  color: teal;
 }
 
 a:hover {
-    color: turquoise;
+  color: turquoise;
 }
 
 a:visited {
-    color: grey
+  color: grey;
 }
 
-.card:hover .content
-{
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    left: 0;
+.card:hover .content {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
 }
-.card .content h3
-{
-    margin: -10px;
-    padding: 5px;
-    font-size: 30px;
-    font-family: bebas neue;
-    text-align: left;
-    justify-content: center;
+.card .content h3 {
+  margin: -10px;
+  padding: 5px;
+  font-size: 30px;
+  font-family: bebas neue;
+  text-align: left;
+  justify-content: center;
 }
 
 .card .content h2 {
-    font-family: bebas neue;
-    font-size: 28px;
-    padding: 2px;
-    position: relative;
-    top: -28px;
+  font-family: bebas neue;
+  font-size: 28px;
+  padding: 2px;
+  position: relative;
+  top: -28px;
 }
 
 h1 {
-    text-align: center;
-    display: flex;
-    font-family: oferta do dia;
-    font-size: 60px;
-    margin-left: auto;
-    margin-right: auto; 
-    align-content: center;
-    position: relative;
-    right: -500px;
-    text-shadow: 2px 2px white;
-    }
+  text-shadow: 2px 2px white;
+}
 
-button
-{
-position: relative;
-height: 50px;
-border-radius: 8px;
-text-align: center;
-font-family: bebas neue;
-height: 30px;
-width: 130px;
-right: 40px;
-top: 100px;
-font-size: 15px;
+button {
+  position: relative;
+  height: 50px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: bebas neue;
+  height: 30px;
+  width: 130px;
+  right: 40px;
+  top: 100px;
+  font-size: 15px;
 }
